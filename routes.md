@@ -58,6 +58,6 @@ All routes include Schedule data even though it's a separate model in our databa
 
 This route structure is designed to be extensible for future types of analytics as they may arise.
 
-`GET` `/analytics/ridership` Gets all analytics about ridership
+`GET` `/stats/ridership` Gets all analytics about ridership
 
-`POST` `/analytics/ridership` Updates ridership analytics
+`POST` `/stats/ridership/{van_id}` Updates ridership analytics
