@@ -203,6 +203,7 @@
 </section>
 <section id="routes-routes">
 <h2>Routes Routes<a class="headerlink" href="#routes-routes" title="Link to this heading">#</a></h2>
+<p>All routes include Schedule data even though it’s a separate model in our database. This is because the schedule should just be sent with the route.</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/routes</span></code> Gets all routes</p>
 <p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/routes</span></code> Parses the uploaded KML file and creates a new routes</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}</span></code> Gets a route by the specified ID with its schedule</p>
@@ -229,6 +230,7 @@
 </section>
 <section id="analytics-routes">
 <h2>Analytics Routes<a class="headerlink" href="#analytics-routes" title="Link to this heading">#</a></h2>
+<p>This route structure is designed to be extensible for future types of analytics as they may arise.</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/analytics/ridership</span></code> Gets all analytics about ridership</p>
 <p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/analytics/ridership</span></code> Updates ridership analytics</p>
 </section>

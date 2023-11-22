@@ -14,6 +14,8 @@
 
 ## Routes Routes
 
+All routes include Schedule data even though it's a separate model in our database. This is because the schedule should just be sent with the route.
+
 `GET` `/routes` Gets all routes
 
 `POST` `/routes` Parses the uploaded KML file and creates a new routes
@@ -53,6 +55,8 @@
 `DELETE` `/vans/{van_id}` Deletes the specified van by ID
 
 ## Analytics Routes
+
+This route structure is designed to be extensible for future types of analytics as they may arise.
 
 `GET` `/analytics/ridership` Gets all analytics about ridership
 
