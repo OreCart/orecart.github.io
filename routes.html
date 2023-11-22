@@ -2,9 +2,12 @@
 <html class="no-js" lang="en" data-content_root="./">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="#" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="OreCart Documentation" href="index.html" />
 
-    <!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19 --><title>Search - OreCart Documentation</title><link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <!-- Generated with Sphinx 7.2.6 and Furo 2023.08.19 -->
+        <title>Routes - OreCart Documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=36a5483c" />
     
@@ -131,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -145,15 +148,15 @@
   
   <span class="sidebar-brand-text">OreCart Documentation</span>
   
-</a><form class="sidebar-search-container" method="get" action="#" role="search">
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
   <input type="hidden" name="check_keywords" value="yes">
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="routes.html">Routes</a></li>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Routes</a></li>
 </ul>
 
 </div>
@@ -173,7 +176,8 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
@@ -181,23 +185,54 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          
-<noscript>
-<div class="admonition error">
-  <p class="admonition-title">Error</p>
-  <p>
-    Please activate JavaScript to enable the search functionality.
-  </p>
-</div>
-</noscript>
-
-<div id="search-results"></div>
+          <section id="routes">
+<h1>Routes<a class="headerlink" href="#routes" title="Link to this heading">#</a></h1>
+<section id="alert-routes">
+<h2>Alert Routes<a class="headerlink" href="#alert-routes" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts</span></code> Returns all alerts.</p>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts/{alert_id}</span></code> Returns the specified alert by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts</span></code> Creates a new alert with text (string), start time (UTC datetime), and end time (UTC datetime)</p>
+<p><code class="docutils literal notranslate"><span class="pre">PUT</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts/{alert_id}</span></code> Updates the alert by ID with the specified data for text, start time, and end time</p>
+<p><code class="docutils literal notranslate"><span class="pre">DELETE</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts/{alert_id}</span></code> Deletes an alert by ID</p>
+</section>
+<section id="routes-routes">
+<h2>Routes Routes<a class="headerlink" href="#routes-routes" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/routes</span></code> Gets all routes</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/routes</span></code> Parses the uploaded KML file and creates a new routes</p>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}</span></code> Gets a route by the specified ID with its schedule</p>
+<p><code class="docutils literal notranslate"><span class="pre">PUT</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}</span></code> Updates a route by ID with the uploaded KML file</p>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}/stops</span></code> Gets all the stops for the specified route by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}/stops</span></code> Adds a stop to the specified route by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">DELETE</span></code> <code class="docutils literal notranslate"><span class="pre">/routes/{route_id}/stops/{stop_id}</span></code> Removes the specified stop by ID from the specified route by ID</p>
+</section>
+<section id="stops-routes">
+<h2>Stops Routes<a class="headerlink" href="#stops-routes" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/stops</span></code> Gets all stops</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/stops</span></code> Creates a new stop</p>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/stops/{stop_id}</span></code> Gets the specified stop by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">PUT</span></code> <code class="docutils literal notranslate"><span class="pre">/stops/{stop_id}</span></code> Updates the specified stop by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">DELETE</span></code> <code class="docutils literal notranslate"><span class="pre">/stops/{stop_id}</span></code> Deletes the specified stop by ID</p>
+</section>
+<section id="van-routes">
+<h2>Van Routes<a class="headerlink" href="#van-routes" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/vans</span></code> Gets all vans</p>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/vans/{van_id}</span></code> Gets the specified van by ID</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/vans</span></code> Creates a new van</p>
+<p><code class="docutils literal notranslate"><span class="pre">PUT</span></code> <code class="docutils literal notranslate"><span class="pre">/vans/{van_id}</span></code> Updates the specified van by ID with a new route selection</p>
+<p><code class="docutils literal notranslate"><span class="pre">DELETE</span></code> <code class="docutils literal notranslate"><span class="pre">/vans/{van_id}</span></code> Deletes the specified van by ID</p>
+</section>
+<section id="analytics-routes">
+<h2>Analytics Routes<a class="headerlink" href="#analytics-routes" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/analytics/ridership</span></code> Gets all analytics about ridership</p>
+<p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/analytics/ridership</span></code> Updates ridership analytics</p>
+</section>
+</section>
 
         </article>
       </div>
@@ -205,7 +240,17 @@
         
         <div class="related-pages">
           
-          
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -224,8 +269,31 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Routes</a><ul>
+<li><a class="reference internal" href="#alert-routes">Alert Routes</a></li>
+<li><a class="reference internal" href="#routes-routes">Routes Routes</a></li>
+<li><a class="reference internal" href="#stops-routes">Stops Routes</a></li>
+<li><a class="reference internal" href="#van-routes">Van Routes</a></li>
+<li><a class="reference internal" href="#analytics-routes">Analytics Routes</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
@@ -234,8 +302,5 @@
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=32e29ea5"></script>
-    
-<script src="_static/searchtools.js"></script>
-<script src="_static/language_data.js"></script>
-<script src="searchindex.js"></script></body>
+    </body>
 </html>
