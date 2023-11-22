@@ -7,4 +7,4 @@ Welcome to the documentation page for the OreCart ecosystem!
    :maxdepth: 2
    :caption: Contents
 
-   test
+   routes
