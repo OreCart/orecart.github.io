@@ -2,6 +2,22 @@
 
 ## Alert Routes
 
+<!-- <details>
+ <summary><code>GET</code> <code><b>/alerts</b></code> Returns all alerts.</summary>
+
+> ##### Parameters
+> | name      |  type     | data type               | description                                                           |
+> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
+> | include[] |  required | object (JSON or YAML)   | can include `text`, `start`, or `end` to filter alerts by  |
+
+> ##### Responses
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json`                | `{ alerts }`                                                        |
+> | `403`         | `application/json`                | `{"code":"403","message":"Forbidden"}`                              |
+
+</details> -->
+
 `GET` `/alerts` Returns all alerts.
 
 `GET` `/alerts/{alert_id}` Returns the specified alert by ID
