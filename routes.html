@@ -195,6 +195,21 @@
 <h1>Routes<a class="headerlink" href="#routes" title="Link to this heading">#</a></h1>
 <section id="alert-routes">
 <h2>Alert Routes<a class="headerlink" href="#alert-routes" title="Link to this heading">#</a></h2>
+<!-- <details>
+ <summary><code>GET</code> <code><b>/alerts</b></code> Returns all alerts.</summary>
+
+> ##### Parameters
+> | name      |  type     | data type               | description                                                           |
+> |-----------|-----------|-------------------------|-----------------------------------------------------------------------|
+> | include[] |  required | object (JSON or YAML)   | can include `text`, `start`, or `end` to filter alerts by  |
+
+> ##### Responses
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json`                | `{ alerts }`                                                        |
+> | `403`         | `application/json`                | `{"code":"403","message":"Forbidden"}`                              |
+
+</details> -->
 <p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts</span></code> Returns all alerts.</p>
 <p><code class="docutils literal notranslate"><span class="pre">GET</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts/{alert_id}</span></code> Returns the specified alert by ID</p>
 <p><code class="docutils literal notranslate"><span class="pre">POST</span></code> <code class="docutils literal notranslate"><span class="pre">/alerts</span></code> Creates a new alert with text (string), start time (UTC datetime), and end time (UTC datetime)</p>
